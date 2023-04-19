@@ -23,7 +23,10 @@ def local_maxima_indexs(data):
     return indexs
 
 if __name__ == "__main__":
+    min_peak = 50
     csv_file = argv[1]
+    if len(argv) == 3:
+        min_peak = int(argv[2])
     astrometry_data = read_csv(csv_file)
     time, radial_velocity = [int(item[0]) for item in astrometry_data[1:]], [float(item[1]) for item in astrometry_data[1:]]
     time_resolution = time[1] - time[0]
@@ -37,7 +40,7 @@ if __name__ == "__main__":
     ft_radial_velocity = [abs(item) for item in ft_radial_velocity]
     ft_radial_velocity[0] = 0
     for index, item in enumerate(ft_radial_velocity):
-        if item < 50:
+        if item < min_peak:                  # Filtering Peaks
             ft_radial_velocity[index] = 0
     ft_radial_velocity_frequency = numpy.fft.rfftfreq(len(radial_velocity))
     plot.title("Fourier Transformation of Radial Velocity")
