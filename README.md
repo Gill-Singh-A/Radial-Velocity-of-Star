@@ -3,7 +3,7 @@ A Program that approximates the number of exoplanets and their data (Mass, Radiu
 
 ## Theory
 In free space, any given number of objects orbit around their center of mass.<br />
-Similarly, in a Star System, every body revolves around the common center of mass of the system. Even though the Star might not appear revolving around the center of mass because of the fact that the center of mass is almost at the center of the star due to its massive mass. But it still revolves around that commong point, giving it a velocity.<br />
+Similarly, in a Star System, every body revolves around the common center of mass of the system. Even though the Star might not appear revolving around the center of mass because of the fact that the center of mass is almost at the center of the star due to its massive mass. But it still revolves around that common point, giving it a velocity.<br />
 And we use that thing to measure the radial velocity of the star by Doppler Effect shown by Light.<br />
 If the star is moving away from us, then the Light comming from the star is red shifted due to which its wavelength increases.<br />
 It the star is moving towards us, then the Light comming from the star is blue shifted due to which its wavelength decreases.<br/>
