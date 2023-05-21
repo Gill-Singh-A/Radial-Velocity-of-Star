@@ -17,6 +17,11 @@ Modules/Packages used:
 * numpy
 * math
 * matplotlib
+<!-- -->
+Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ## Input
 It takes 1 argument through the command by which we run the python file and that is the csv file of the astronomical data (Radial Velocity vs Time with noise)
